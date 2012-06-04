@@ -68,6 +68,15 @@ xyz_sum(xyz_t *sum, const xyz_t * const a, const xyz_t * const b)
   sum->z = a->z + b->z;
 }
 
+// diff = a - b
+void
+xyz_subtract(xyz_t *diff, const xyz_t * const a, const xyz_t * const b)
+{
+  diff->x = a->x - b->x;
+  diff->y = a->y - b->y;
+  diff->z = a->z - b->z;
+}
+
 // sum = sum*sum_scale + a*a_scale + b*b_scale
 void
 xyz_sum_scale(xyz_t *sum, const double sum_scale,
