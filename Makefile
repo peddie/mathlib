@@ -12,7 +12,7 @@ DEBUGFLAGS = -g
 OPTFLAGS = -O3 -march=native
 
 CFLAGS = $(WARNINGFLAGS) $(DEBUGFLAGS) $(INCLUDES) $(OPTFLAGS) -std=gnu99 
-CC = gcc
+CC ?= gcc
 
 .PHONY: clean 
 
